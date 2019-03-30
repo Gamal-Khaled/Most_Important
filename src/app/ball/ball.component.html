@@ -1,0 +1,9 @@
+<div 
+  @myInsertRemoveTrigger
+  (click)="removeMe()"
+  *ngIf="IN"
+  class="ball"
+  (@myInsertRemoveTrigger.done)="addMe()"
+>
+    <p>Text because why not</p>
+</div>
